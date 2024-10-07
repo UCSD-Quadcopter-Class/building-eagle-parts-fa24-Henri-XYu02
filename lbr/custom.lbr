@@ -326,7 +326,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="R1-RES" uservalue="yes">
+<deviceset name="R1-RES" prefix="R" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
@@ -346,7 +346,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="D1-RLED" uservalue="yes">
+<deviceset name="D1-RLED" prefix="D" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="REDDIODE" x="0" y="0"/>
 </gates>
@@ -366,7 +366,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="Q1-FET">
+<deviceset name="Q1-FET" prefix="Q">
 <gates>
 <gate name="G$1" symbol="Q-MOSFET" x="0" y="0"/>
 </gates>
@@ -387,7 +387,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="U1-IMU-LSM">
+<deviceset name="U1-IMU-LSM" prefix="U">
 <gates>
 <gate name="G$1" symbol="IMU" x="0" y="0"/>
 </gates>
