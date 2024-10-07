@@ -86,7 +86,7 @@
 <wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.12" layer="51"/>
 <wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.12" layer="51"/>
 <text x="-0.1" y="1.1" size="0.9" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<text x="-0.1" y="-1.2" size="0.3" layer="27" align="top-center">&gt;VALUE</text>
+<text x="-0.1" y="-1.2" size="0.9" layer="27" font="vector" align="top-center">&gt;VALUE</text>
 <wire x1="-1.8" y1="1" x2="-1.8" y2="-1.1" width="0.05" layer="39"/>
 <wire x1="-1.8" y1="-1.1" x2="1.4" y2="-1.1" width="0.05" layer="39"/>
 <wire x1="1.4" y1="-1.1" x2="1.4" y2="1" width="0.05" layer="39"/>
@@ -105,8 +105,8 @@
 <wire x1="0.98298125" y1="-0.612140625" x2="0.98298125" y2="0.581659375" width="0.1524" layer="51"/>
 <wire x1="0.32258125" y1="0.581659375" x2="-0.36321875" y2="0.581659375" width="0.1524" layer="51"/>
 <wire x1="-1.02361875" y1="0.581659375" x2="-1.02361875" y2="-0.612140625" width="0.1524" layer="51"/>
-<text x="-0.6" y="1.7" size="0.9" layer="27" font="vector">&gt;Name</text>
-<text x="-0.6" y="-1.9" size="0.254" layer="27" ratio="6">&gt;Value</text>
+<text x="-1.5" y="1.8" size="0.9" layer="25" font="vector">&gt;Name</text>
+<text x="-1.1" y="-2.5" size="0.9" layer="27" font="vector">&gt;Value</text>
 <wire x1="-1.9" y1="1.4" x2="-1.9" y2="-1.4" width="0.05" layer="39"/>
 <wire x1="-1.9" y1="-1.4" x2="1.9" y2="-1.4" width="0.05" layer="39"/>
 <wire x1="1.9" y1="-1.4" x2="1.9" y2="1.4" width="0.05" layer="39"/>
@@ -135,7 +135,7 @@
 <wire x1="1.7" y1="1.3" x2="0.9" y2="1.3" width="0.15" layer="51"/>
 <wire x1="-0.4" y1="-0.9" x2="0.4" y2="-0.9" width="0.15" layer="51"/>
 <text x="-1.4" y="2.2" size="0.9" layer="25" font="vector">&gt;Name</text>
-<text x="-0.5" y="-1.7" size="0.254" layer="27">&gt;Value</text>
+<text x="-1.5" y="-2.5" size="0.9" layer="27" font="vector">&gt;Value</text>
 <wire x1="-2.4" y1="1.9" x2="2.6" y2="1.9" width="0.05" layer="39"/>
 <wire x1="2.6" y1="1.9" x2="2.6" y2="-1.4" width="0.05" layer="39"/>
 <wire x1="2.6" y1="-1.4" x2="-2.4" y2="-1.4" width="0.05" layer="39"/>
@@ -295,6 +295,8 @@
 <rectangle x1="0" y1="-2.54" x2="2.54" y2="2.54" layer="94"/>
 <wire x1="12.7" y1="7.62" x2="2.54" y2="7.62" width="0.1524" layer="94"/>
 <rectangle x1="0" y1="5.08" x2="2.54" y2="10.16" layer="94"/>
+<text x="7.62" y="15.24" size="2.54" layer="95">&gt;Name</text>
+<text x="-17.78" y="5.08" size="2.54" layer="96">&gt;Value</text>
 </symbol>
 <symbol name="IMU">
 <pin name="SDO/SA0" x="-22.86" y="7.62" length="middle" direction="out"/>
@@ -320,7 +322,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RESISTOR">
+<deviceset name="RESISTOR-DEVICE" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="RESISTOR" x="0" y="0"/>
 </gates>
@@ -333,13 +335,14 @@
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="XINLE"/>
-<attribute name="DIGIKEY" value="311-0.0ARCT-ND"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="311-0.0ARCT-ND"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="D-RLED">
+<deviceset name="D-RLED" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="REDDIODE" x="0" y="0"/>
 </gates>
@@ -350,12 +353,16 @@
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CREATOR" value="XINLE"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="160-1178-1-ND" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="Q-FET">
+<deviceset name="Q-FET" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="MOSFET" x="0" y="0"/>
 </gates>
@@ -367,12 +374,16 @@
 <connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CREATOR" value="XINLE"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="SI2302CDS-T1-E3CT-ND"/>
+</technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="U-MU">
+<deviceset name="U-IMU" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="IMU" x="0" y="0"/>
 </gates>
@@ -395,7 +406,11 @@
 <connect gate="G$1" pin="VDDIO" pad="5"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CREATOR" value="XINLE"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="497-18367-1-ND"/>
+</technology>
 </technologies>
 </device>
 </devices>
