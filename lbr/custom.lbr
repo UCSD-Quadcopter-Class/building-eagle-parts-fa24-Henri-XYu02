@@ -113,9 +113,9 @@
 <wire x1="2.4" y1="1.4" x2="-2.4" y2="1.4" width="0.05" layer="39"/>
 </package>
 <package name="MOSFET">
-<smd name="D" x="0" y="1.35" dx="0.559" dy="0.724" layer="1" stop="no" cream="no"/>
-<smd name="G" x="-0.95" y="-0.985" dx="0.559" dy="0.724" layer="1" stop="no" cream="no"/>
-<smd name="S" x="0.95" y="-0.985" dx="0.559" dy="0.724" layer="1" stop="no" cream="no"/>
+<smd name="D" x="0" y="1.4" dx="0.6" dy="0.8" layer="1" stop="no" cream="no"/>
+<smd name="G" x="-1" y="-1" dx="0.6" dy="0.8" layer="1" stop="no" cream="no"/>
+<smd name="S" x="1" y="-1" dx="0.6" dy="0.8" layer="1" stop="no" cream="no"/>
 <wire x1="-1.1" y1="-1.2" x2="-0.8" y2="-1.2" width="0.05" layer="51"/>
 <wire x1="-0.8" y1="-1.2" x2="-0.8" y2="-0.8" width="0.05" layer="51"/>
 <wire x1="-1.1" y1="-1.2" x2="-1.1" y2="-0.8" width="0.05" layer="51"/>
@@ -139,12 +139,12 @@
 <wire x1="2.4" y1="2.4" x2="2.4" y2="-1.9" width="0.05" layer="39"/>
 <wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.05" layer="39"/>
 <wire x1="-2.4" y1="-1.9" x2="-2.4" y2="2.4" width="0.05" layer="39"/>
-<rectangle x1="-0.3" y1="0.9" x2="0.3" y2="1.8" layer="29"/>
-<rectangle x1="-1.3" y1="-1.4" x2="-0.6" y2="-0.6" layer="29"/>
-<rectangle x1="0.6" y1="-1.4" x2="1.3" y2="-0.6" layer="29"/>
-<rectangle x1="-0.3" y1="0.9" x2="0.3" y2="1.8" layer="31"/>
-<rectangle x1="-1.3" y1="-1.4" x2="-0.6" y2="-0.6" layer="31"/>
-<rectangle x1="0.6" y1="-1.4" x2="1.3" y2="-0.6" layer="31"/>
+<rectangle x1="-0.3" y1="1" x2="0.3" y2="1.8" layer="29"/>
+<rectangle x1="-1.3" y1="-1.4" x2="-0.7" y2="-0.6" layer="29"/>
+<rectangle x1="0.7" y1="-1.4" x2="1.3" y2="-0.6" layer="29"/>
+<rectangle x1="-0.3" y1="1" x2="0.3" y2="1.8" layer="31"/>
+<rectangle x1="-1.3" y1="-1.4" x2="-0.7" y2="-0.6" layer="31"/>
+<rectangle x1="0.7" y1="-1.4" x2="1.3" y2="-0.6" layer="31"/>
 </package>
 <package name="IMU">
 <smd name="1" x="-1.2103" y="0.75" dx="0.3515" dy="0.5766" layer="1" rot="R270"/>
@@ -387,7 +387,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="U1-LSM6DS0">
+<deviceset name="U1-IMU-LSM6DS0">
 <gates>
 <gate name="G$1" symbol="IMU" x="0" y="0"/>
 </gates>
