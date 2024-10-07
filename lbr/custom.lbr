@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -139,14 +139,14 @@
 <wire x1="2.4" y1="2.4" x2="2.4" y2="-1.9" width="0.05" layer="39"/>
 <wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.05" layer="39"/>
 <wire x1="-2.4" y1="-1.9" x2="-2.4" y2="2.4" width="0.05" layer="39"/>
-<rectangle x1="-0.2" y1="1.1" x2="0.2" y2="1.7" layer="29"/>
-<rectangle x1="-1.2" y1="-1.3" x2="-0.8" y2="-0.7" layer="29"/>
-<rectangle x1="0.8" y1="-1.3" x2="1.2" y2="-0.7" layer="29"/>
-<rectangle x1="-0.2" y1="1.1" x2="0.2" y2="1.7" layer="31"/>
-<rectangle x1="-1.2" y1="-1.3" x2="-0.8" y2="-0.7" layer="31"/>
-<rectangle x1="0.8" y1="-1.3" x2="1.2" y2="-0.7" layer="31"/>
+<rectangle x1="-0.3" y1="1" x2="0.3" y2="1.8" layer="29"/>
+<rectangle x1="-1.3" y1="-1.4" x2="-0.7" y2="-0.6" layer="29"/>
+<rectangle x1="0.7" y1="-1.4" x2="1.3" y2="-0.6" layer="29"/>
+<rectangle x1="-0.3" y1="1" x2="0.3" y2="1.8" layer="31"/>
+<rectangle x1="-1.3" y1="-1.4" x2="-0.7" y2="-0.6" layer="31"/>
+<rectangle x1="0.7" y1="-1.4" x2="1.3" y2="-0.6" layer="31"/>
 </package>
-<package name="IMU">
+<package name="LSM6DS0">
 <smd name="1" x="-1.2103" y="0.75" dx="0.3515" dy="0.5766" layer="1" rot="R270"/>
 <smd name="2" x="-1.2103" y="0.25" dx="0.3515" dy="0.5766" layer="1" rot="R270"/>
 <smd name="3" x="-1.2103" y="-0.25" dx="0.3515" dy="0.5766" layer="1" rot="R270"/>
@@ -285,7 +285,7 @@
 <text x="-7.62" y="-5.08" size="2.54" layer="96" ratio="10">&gt;Value</text>
 <text x="-7.62" y="2.54" size="2.54" layer="95" ratio="10">&gt;Name</text>
 </symbol>
-<symbol name="MOSFET">
+<symbol name="Q-MOSFET">
 <pin name="G" x="-7.62" y="-2.54" length="middle"/>
 <pin name="S" x="7.62" y="-10.16" length="middle" rot="R90"/>
 <pin name="D" x="7.62" y="7.62" length="middle" rot="R270"/>
@@ -368,7 +368,7 @@
 </deviceset>
 <deviceset name="Q1-FET">
 <gates>
-<gate name="G$1" symbol="MOSFET" x="0" y="0"/>
+<gate name="G$1" symbol="Q-MOSFET" x="0" y="0"/>
 </gates>
 <devices>
 <device name="N-CHANNEL" package="MOSFET">
@@ -387,12 +387,12 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="U1-IMU-LSM6DS0">
+<deviceset name="U1-IMU-LSM">
 <gates>
 <gate name="G$1" symbol="IMU" x="0" y="0"/>
 </gates>
 <devices>
-<device name="LSM6DSOXTR6-AXIS" package="IMU">
+<device name="LSM6DSOXTR6-AXIS" package="LSM6DS0">
 <connects>
 <connect gate="G$1" pin="CS" pad="12"/>
 <connect gate="G$1" pin="GND" pad="6 7"/>
