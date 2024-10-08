@@ -153,20 +153,20 @@
 <wire x1="0.3" y1="1.4" x2="0.3" y2="0.6" width="0.127" layer="51"/>
 </package>
 <package name="U-LSM6DS0">
-<smd name="1" x="-1.2103" y="0.75" dx="0.3" dy="0.48" layer="1" rot="R270"/>
-<smd name="2" x="-1.2103" y="0.25" dx="0.3" dy="0.48" layer="1" rot="R270"/>
-<smd name="3" x="-1.2103" y="-0.25" dx="0.3" dy="0.48" layer="1" rot="R270"/>
-<smd name="4" x="-1.2103" y="-0.75" dx="0.3" dy="0.48" layer="1" rot="R270"/>
-<smd name="5" x="-0.5" y="-0.9563" dx="0.3" dy="0.48" layer="1" rot="R180"/>
-<smd name="6" x="0" y="-0.9563" dx="0.3" dy="0.48" layer="1" rot="R180"/>
-<smd name="7" x="0.5" y="-0.9563" dx="0.3" dy="0.48" layer="1" rot="R180"/>
-<smd name="8" x="1.2103" y="-0.75" dx="0.3" dy="0.48" layer="1" rot="R270"/>
-<smd name="9" x="1.2103" y="-0.25" dx="0.3" dy="0.48" layer="1" rot="R270"/>
-<smd name="10" x="1.2103" y="0.25" dx="0.3" dy="0.48" layer="1" rot="R270"/>
-<smd name="11" x="1.2103" y="0.75" dx="0.3" dy="0.48" layer="1" rot="R270"/>
-<smd name="12" x="0.5" y="0.9563" dx="0.3" dy="0.48" layer="1" rot="R180"/>
-<smd name="13" x="0" y="0.9563" dx="0.3" dy="0.48" layer="1" rot="R180"/>
-<smd name="14" x="-0.5" y="0.9563" dx="0.3" dy="0.48" layer="1" rot="R180"/>
+<smd name="1" x="-1.2103" y="0.75" dx="0.35" dy="0.575" layer="1" rot="R270"/>
+<smd name="2" x="-1.2103" y="0.25" dx="0.35" dy="0.575" layer="1" rot="R270"/>
+<smd name="3" x="-1.2103" y="-0.25" dx="0.35" dy="0.575" layer="1" rot="R270"/>
+<smd name="4" x="-1.2103" y="-0.75" dx="0.35" dy="0.575" layer="1" rot="R270"/>
+<smd name="5" x="-0.5" y="-0.9563" dx="0.35" dy="0.575" layer="1" rot="R180"/>
+<smd name="6" x="0" y="-0.9563" dx="0.35" dy="0.575" layer="1" rot="R180"/>
+<smd name="7" x="0.5" y="-0.9563" dx="0.35" dy="0.575" layer="1" rot="R180"/>
+<smd name="8" x="1.2103" y="-0.75" dx="0.35" dy="0.575" layer="1" rot="R270"/>
+<smd name="9" x="1.2103" y="-0.25" dx="0.35" dy="0.575" layer="1" rot="R270"/>
+<smd name="10" x="1.2103" y="0.25" dx="0.35" dy="0.575" layer="1" rot="R270"/>
+<smd name="11" x="1.2103" y="0.75" dx="0.35" dy="0.575" layer="1" rot="R270"/>
+<smd name="12" x="0.5" y="0.9563" dx="0.35" dy="0.575" layer="1" rot="R180"/>
+<smd name="13" x="0" y="0.9563" dx="0.35" dy="0.575" layer="1" rot="R180"/>
+<smd name="14" x="-0.5" y="0.9563" dx="0.35" dy="0.575" layer="1" rot="R180"/>
 <wire x1="-1.6764" y1="-1.4224" x2="-0.8668" y2="-1.4224" width="0.1524" layer="21"/>
 <wire x1="1.6764" y1="-1.4224" x2="1.6764" y2="-1.1168" width="0.1524" layer="21"/>
 <wire x1="1.6764" y1="1.4224" x2="0.8668" y2="1.4224" width="0.1524" layer="21"/>
